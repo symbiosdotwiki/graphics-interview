@@ -32,8 +32,8 @@ export default function Knob(props) {
   const { nodes, materials } = gltf;
   // console.log(nodes, materials);
 
-  const roughnessMap = useLoader(TextureLoader, "/tex/rough.jpeg");
-  const hdrTexture = useLoader(TextureLoader, "/tex/hdr.jpeg");
+  const roughnessMap = useLoader(TextureLoader, basePath + "/tex/rough.jpeg");
+  const hdrTexture = useLoader(TextureLoader, basePath + "/tex/hdr.jpeg");
 
   let fPos = null;
   const handleClick = (event) => {

@@ -8,7 +8,7 @@ const AudioPlayer = (props) => {
   useEffect(() => {
     // Load the MP3 file from the public directory
     const audioElement = audioRef.current;
-    audioElement.src = "/track.mp3"; // Path to your MP3 file in the public directory
+    audioElement.src = basePath + "/track.mp3"; // Path to your MP3 file in the public directory
 
     // Set the volume to 0.5 (50%)
     // audioElement.volume = 0.5;
