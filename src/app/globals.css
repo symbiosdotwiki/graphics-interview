@@ -47,3 +47,48 @@ button {
   text-decoration: none;  /* No underline */
   font-family: 'Viafont';
 }
+
+
+/* Style the audio player */
+.audio-player {
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  width: 90%;
+  color: #26f;
+  z-index: 99999;
+  text-shadow: none !important;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #26f; /* Charcoal background for controls */
+}
+
+.audio-player audio {
+  width: 100%; /* Full width */
+  color: #26f; /* Blue text */
+}
+
+/* Style the buttons inside the audio player */
+audio::-moz-media-controls-panel {
+  background-color: #26f; /* Charcoal background for controls */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-fullscreen-button {
+  background-color: #26f;
+  color: #26f; /* Blue buttons */
+}
+
+audio::-moz-media-controls-play-button,
+audio::-moz-media-controls-volume-slider,
+audio::-moz-media-controls-mute-button,
+audio::-moz-media-controls-fullscreen-button {
+  background-color: #26f; /* Blue buttons */
+}
+
+audio button {
+  background-color: #00f; /* Blue buttons */
+}

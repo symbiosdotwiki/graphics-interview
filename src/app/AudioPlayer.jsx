@@ -30,7 +30,7 @@ const AudioPlayer = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className="audio-player">
       <audio ref={audioRef} controls>
         Your browser does not support the <code>audio</code> element.
       </audio>
