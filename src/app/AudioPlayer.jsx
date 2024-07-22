@@ -1,6 +1,9 @@
 // components/AudioPlayer.js
 import React, { useRef, useEffect } from "react";
 
+const isProduction = process.env.NODE_ENV === "production";
+const basePath = isProduction ? process.env.NEXT_PUBLIC_BASE_PATH : "";
+
 const AudioPlayer = (props) => {
   // Create a ref to hold the audio element
   const { audioRef } = props;
