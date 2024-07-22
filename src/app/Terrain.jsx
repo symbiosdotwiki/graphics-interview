@@ -108,7 +108,7 @@ function Effects() {
   );
 }
 
-export default function Terrain() {
+const Terrain = (props) => {
   return (
     <Canvas>
       <PerspectiveCamera
@@ -143,4 +143,8 @@ export default function Terrain() {
       <Land position={[0, 0, 0]} />
     </Canvas>
   );
-}
+};
+
+Terrain.displayName = "Terrain";
+
+export default Terrain;

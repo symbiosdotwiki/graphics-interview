@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "yarn build && cp .nojekyll ./build",
+    "deploy": "gh-pages -d build -t true; git add .; git commit -m 'Deploy main'; git push origin main;",
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -15,6 +18,7 @@
     "@react-three/postprocessing": "^2.16.2",
     "@types/three": "^0.166.0",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.1.1",
     "glsl-loader": "^0.0.1",
     "leva": "^0.9.35",
     "next": "14.2.3",

@@ -11,7 +11,7 @@ import Terrain from "../Terrain.jsx"
 // const WASMComponent = dynamic(() => import('./components/wasm'))
 
 
-const Home = () => {
+const TerrainPage = () => {
   return (
     <div className={styles.main}>
       <Terrain/>
@@ -19,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default TerrainPage

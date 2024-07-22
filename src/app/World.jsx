@@ -164,7 +164,7 @@ function Effects() {
   );
 }
 
-export default function World() {
+const World = () => {
   const numPlants = 100;
 
   const randomVector = (r) => [
@@ -221,4 +221,8 @@ export default function World() {
       </Bvh>
     </Canvas>
   );
-}
+};
+
+World.displayName = "World";
+
+export default World;

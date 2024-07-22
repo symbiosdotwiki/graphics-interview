@@ -50,3 +50,5 @@ export default function VolumeControl() {
     </>
   );
 }
+
+VolumeControl.displayName = "VolumeControl";
