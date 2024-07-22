@@ -10,7 +10,9 @@ import * as THREE from "three";
 import { useDrag } from "react-use-gesture";
 
 // process.env.PUBLIC_URL +
-const gltfURL = "/knob.glb";
+const isProduction = process.env.NODE_ENV === "production";
+const basePath = isProduction ? process.env.NEXT_PUBLIC_BASE_PATH : "";
+const gltfURL = basePath + "/knob.glb";
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));

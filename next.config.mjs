@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === "production";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
 const nextConfig = {
   distDir: "build",
   output: "export",
-  assetPrefix: isProd ? "/graphics-interview/" : undefined,
-  basePath: isProd ? "/graphics-interview" : undefined,
+  assetPrefix: isProd ? basePath : undefined,
+  basePath: isProd ? basePath : undefined,
 
   webpack: (config, { isServer }) => {
     config.module.rules.push({
